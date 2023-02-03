@@ -2,7 +2,7 @@
 <script>
 
     var dinheiroEmReais = Number.parseFloat(prompt("Dígite o valor disponível em reais"));
-    var dolares = (dinheiroEmReais / 3.45);
+    var dolares = dinheiroEmReais / 3.45;
     var formatado = (dolares.toLocaleString("en-US", { style: "currency", currency: "USD" }))
 
     document.write("Você poderá comprar até " + formatado + " dólares.");
